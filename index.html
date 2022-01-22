@@ -3,28 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="author" content="ulipese (Felipe Sousa de Oliveira)">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/main.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <section class="banner">
+    <img src="./assets/images/logo.svg" alt="Logo image Splitter" class="logo-splitter">
+    <section class="calculator-layout">
+      <section class="calculator-inputs">
+        <article class="bill-article">
+          <h1 class="bill-title title">Bill</h1>
+          <input type="number" placeholder="0.00" class="bill-input input">
+        </article>
+        <article class="tip-article">
+          <h1 class="tip-title title">Select Tip %</h1>
+          <input type="button" value="5%" class="button">
+          <input type="button" value="10%" class="button"> <br>
+          <input type="button" value="15%" class="button">
+          <input type="button" value="25%" class="button"> <br>
+          <input type="button" value="50%" class="button">
+          <input type="number" class="custom-input input button" placeholder="Custom">
+        </article>
+        <article class="people-article">
+          <h1 class="people-title title">Number of People</h1>
+          <input type="number" class="people-input input" placeholder="2">
+        </article>
+      </section>
+      <section class="calculator-result">
+        <article class="tip-amount-article"> <!--Finish the html structure-->
+        
+        </article>
+        <article class="total-article">
 
-  Bill
+        </article>
+        <button class="reset-button" onclick="window.location.reload();">RESET</button>
+      </section>
+    </section>
+  </section>
+<!--
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+
 
   Number of People
 
@@ -35,10 +55,13 @@
   / person
 
   Reset
-  
+-->
+<!--
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ulipese" rel="noreferrer">ulipese (Felipe Sousa de Oliveira)</a>.
   </div>
+-->
+  
 </body>
 </html>
