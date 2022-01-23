@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="author" content="ulipese (Felipe Sousa de Oliveira)">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/styles/main.css">
-  <title>Frontend Mentor | Tip calculator app</title>
-</head>
-<body>
-  <section class="banner">
-    <img src="./assets/images/logo.svg" alt="Logo image Splitter" class="logo-splitter">
-    <section class="calculator-layout">
-      <section class="calculator-inputs">
-        <article class="bill-article">
-          <h1 class="bill-title title">Bill</h1>
-          <input type="number" placeholder="0.00" class="bill-input input">
-        </article>
-        <article class="tip-article">
-          <h1 class="tip-title title">Select Tip %</h1>
-          <input type="button" value="5%" class="button">
-          <input type="button" value="10%" class="button"> <br>
-          <input type="button" value="15%" class="button">
-          <input type="button" value="25%" class="button"> <br>
-          <input type="button" value="50%" class="button">
-          <input type="number" class="custom-input input button" placeholder="Custom">
-        </article>
-        <article class="people-article">
-          <h1 class="people-title title">Number of People</h1>
-          <input type="number" class="people-input input" placeholder="2">
-        </article>
-      </section>
-      <section class="calculator-result">
-        <article class="tip-amount-article"> <!--Finish the html structure-->
-        
-        </article>
-        <article class="total-article">
-
-        </article>
-        <button class="reset-button" onclick="window.location.reload();">RESET</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ulipese (Felipe Sousa de Oliveira)" />
+    <meta
+      name="description"
+      content="Tip calculator - A site created for the author's portfolio, practice and study. "
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <section class="banner">
+      <img
+        src="./assets/images/logo.svg"
+        alt="Logo image Splitter"
+        class="logo-splitter"
+      />
+      <section class="calculator-layout">
+        <section class="calculator-inputs">
+          <article class="bill-article">
+            <h1 class="bill-title title">Bill</h1>
+            <input
+              type="number"
+              placeholder="0.00"
+              class="bill-input input"
+              min="1"
+            />
+          </article>
+          <article class="tip-article">
+            <h1 class="tip-title title">Select Tip %</h1>
+            <input type="button" value="5%" class="button" />
+            <input type="button" value="10%" class="button" />
+            <input type="button" value="15%" class="button" />
+            <input type="button" value="25%" class="button" />
+            <input type="button" value="50%" class="button" />
+            <input
+              type="number"
+              class="custom-input input button"
+              placeholder="Custom"
+              min="1"
+              maxlength="3"
+              oninput="this.value=this.value.slice(0,this.maxLength)"
+            />
+          </article>
+          <article class="people-article">
+            <h1 class="people-title title">Number of People</h1>
+            <input
+              type="number"
+              class="people-input input"
+              placeholder="2"
+              min="1"
+              maxlength="3"
+              oninput="this.value=this.value.slice(0,this.maxLength)"
+            />
+          </article>
+        </section>
+        <section class="calculator-result">
+          <article class="tip-amount-article flex-article-result">
+            <h1 class="tip-title title-result">Tip Amount</h1>
+            <p class="tip-info per-person">/ person</p>
+            <h2 class="tip-amount amount">$4.27</h2>
+          </article>
+          <article class="total-article flex-article-result">
+            <h1 class="total-title title-result">Total</h1>
+            <p class="total-info per-person">/ person</p>
+            <h2 class="total-amount amount">$32.79</h2>
+          </article>
+          <button class="reset-button" onclick="window.location.reload();">
+            RESET
+          </button>
+        </section>
       </section>
     </section>
-  </section>
-<!--
-
-
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
--->
-<!--
+    <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/ulipese" rel="noreferrer">ulipese (Felipe Sousa de Oliveira)</a>.
   </div>
 -->
-  
-</body>
+  </body>
 </html>

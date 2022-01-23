@@ -14,7 +14,7 @@
   /*=== FONTS VARIABLES ===*/
   --form-inputs-font-size: 24px;
   --main-font-family: 'Space Mono', monospace;
-  --main-font-weight: 500;
+  --main-font-weight: 400;
   --bold-font-weight: 700;
 
   font-family: var(--main-font-family);
@@ -25,24 +25,26 @@
   color: var(--very-dark-grayish-cyan);
   font-weight: var(--bold-font-weight);
   margin-bottom: 0.5em;
+  font-size: 1em;
 }
 .input {
-  width: 97%;
+  width: 90%;
   height: 1.5em;
   border-radius: 4px;
   font-size: var(--form-inputs-font-size);
+  font-weight: var(--bold-font-weight);
+  font-family: var(--main-font-family);
   border: none;
   background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
-  font-weight: var(--bold-font-weight);
   text-align: right;
-  padding-right: .5em;
-  padding-left: .5em;
+  padding-right: 0.5em;
+  padding-left: 1em;
   background-image: url('../images/icon-dollar.svg');
   background-size: 10px;
   background-repeat: no-repeat;
   background-position-y: center;
-  background-position-x: .5em;
+  background-position-x: 0.5em;
   outline: none;
 }
 .input:hover {
@@ -55,27 +57,81 @@
   border: none;
   outline: 2px solid var(--strong-cyan);
 }
-.button {
- width: 60px;  /*change all later*/
- height: 30px;
- margin: 3px;
- padding: 0px;
+input[type='button'].button {
+  width: 45%;
+  margin: 0.2em 0.2em 0.3em 0em;
+  height: 1.8em;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: var(--form-inputs-font-size);
+  font-weight: var(--bold-font-weight);
+  font-family: var(--main-font-family);
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-grayish-cyan);
+  cursor: pointer;
+  transition: 200ms;
 }
-.button:hover {
-
+input[type='button'].button:hover {
+  color: var(--very-dark-cyan);
+  background-color: var(--light-grayish-cyan);
 }
-button.active {
-
+input[type='button'].button:active {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+input[type='button'].button.active {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+.flex-article-result {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+}
+.title-result {
+  color: var(--very-light-grayish-cyan);
+  font-size: 1em;
+  font-weight: var(--bold-font-weight);
+  margin: 0;
+}
+.per-person {
+  color: var(--dark-grayish-cyan);
+  font-size: 0.8em;
+  font-weight: var(--bold-font-weight);
+  position: absolute;
+  bottom: -0.5em;
+  left: 0em;
+}
+.amount {
+  color: var(--strong-cyan);
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: -.5em;
 }
 .reset-button {
-
+  height: 2.5em;
+  font-weight: var(--bold-font-weight);
+  font-family: var(--main-font-family);
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  padding: 0em;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  cursor: pointer;
+  transition: 200ms;
 }
 .reset-button:hover {
-
+  color: var(--very-dark-cyan);
+  background-color: var(--light-grayish-cyan);
 }
 /*============== GENERAL AND MOBILE FIRST STYLES ==============*/
 html,
-  body {
+body {
   margin: 0em;
   padding: 0em;
   box-sizing: border-box;
@@ -100,10 +156,29 @@ html,
   padding-top: 0em;
   margin-top: 2em;
 }
+.custom-input {
+  width: 38%;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  text-align: right;
+  background-image: none;
+  padding-left: 0.4em;
+}
+.people-input {
+  background-image: url('../images/icon-person.svg');
+}
+.calculator-result {
+  border-radius: 1em;
+  background-color: var(--very-dark-cyan);
+  padding: 0.5em 1.5em 1.5em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.tip-amount-article {
+  margin-bottom: -.5em;
+}
 
 /*============== DESKTOP STYLES ==============*/
 @media screen and (min-width: 1024px) {
-
-
-
 }
