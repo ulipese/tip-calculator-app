@@ -37,11 +37,36 @@
           </article>
           <article class="tip-article">
             <h1 class="tip-title title">Select Tip %</h1>
-            <input type="button" value="5%" class="button" />
-            <input type="button" value="10%" class="button" />
-            <input type="button" value="15%" class="button" />
-            <input type="button" value="25%" class="button" />
-            <input type="button" value="50%" class="button" />
+            <input
+              type="button"
+              value="5%"
+              class="button"
+              onclick="getElement(this)"
+            />
+            <input
+              type="button"
+              value="10%"
+              class="button"
+              onclick="getElement(this)"
+            />
+            <input
+              type="button"
+              value="15%"
+              class="button"
+              onclick="getElement(this)"
+            />
+            <input
+              type="button"
+              value="25%"
+              class="button"
+              onclick="getElement(this)"
+            />
+            <input
+              type="button"
+              value="50%"
+              class="button"
+              onclick="getElement(this)"
+            />
             <input
               type="number"
               class="custom-input input button"
@@ -49,6 +74,7 @@
               min="1"
               maxlength="3"
               oninput="this.value=this.value.slice(0,this.maxLength)"
+              onchange="getElement(this)"
             />
           </article>
           <article class="people-article">
@@ -86,5 +112,6 @@
     Coded by <a href="https://github.com/ulipese" rel="noreferrer">ulipese (Felipe Sousa de Oliveira)</a>.
   </div>
 -->
+    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>

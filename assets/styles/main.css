@@ -80,7 +80,7 @@ input[type='button'].button:active {
   background-color: var(--strong-cyan);
   color: var(--very-dark-cyan);
 }
-input[type='button'].button.active {
+input[type='button'].active {
   background-color: var(--strong-cyan);
   color: var(--very-dark-cyan);
 }
