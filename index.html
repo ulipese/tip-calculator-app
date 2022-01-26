@@ -31,7 +31,6 @@
             <input
               type="number"
               placeholder="0.00"
-              value="1"
               class="bill-input input"
               min="1"
             />
@@ -42,31 +41,31 @@
               type="button"
               value="5%"
               class="button"
-              onclick="validPercents(this); document.querySelector('.custom-input').value = ' ' "
+              onclick="validPercents(this); document.querySelector('.custom-input').value = ''"
             />
             <input
               type="button"
               value="10%"
               class="button"
-              onclick="validPercents(this); document.querySelector('.custom-input').value = ' ' "
+              onclick="validPercents(this); document.querySelector('.custom-input').value = ''"
             />
             <input
               type="button"
               value="15%"
               class="button"
-              onclick="validPercents(this); document.querySelector('.custom-input').value = ' ' "
+              onclick="validPercents(this); document.querySelector('.custom-input').value = ''"
             />
             <input
               type="button"
               value="25%"
               class="button"
-              onclick="validPercents(this); document.querySelector('.custom-input').value = ' ' "
+              onclick="validPercents(this); document.querySelector('.custom-input').value = ''"
             />
             <input
               type="button"
               value="50%"
               class="button"
-              onclick="validPercents(this); document.querySelector('.custom-input').value = ' ' "
+              onclick="validPercents(this); document.querySelector('.custom-input').value = ''"
             />
             <input
               type="number"
@@ -84,7 +83,6 @@
               type="number"
               class="people-input input"
               placeholder="2"
-              value="1"
               min="1"
               maxlength="3"
               oninput="this.value=this.value.slice(0,this.maxLength)"
@@ -103,7 +101,7 @@
             <p class="total-info per-person">/ person</p>
             <h2 class="total-amount amount">$32.79</h2>
           </article>
-          <button class="reset-button" onclick="location.reload()">
+          <button class="reset-button" onclick="clearAll()">
             RESET
           </button>
         </section>
