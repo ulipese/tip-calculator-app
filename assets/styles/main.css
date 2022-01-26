@@ -155,6 +155,16 @@ body {
   padding: 2em;
   padding-top: 0em;
   margin-top: 2em;
+  display: grid;
+  grid-template-areas:
+    'inputs'
+    'results';
+}
+.calculator-inputs {
+  grid-area: inputs;
+}
+.tip-article {
+  position: relative;
 }
 .custom-input {
   width: 38%;
@@ -162,12 +172,16 @@ body {
   padding-bottom: 0.15em;
   text-align: right;
   background-image: none;
-  padding-left: 0.4em;
+  padding-left: 0.5em;
+  position: absolute;
+  left: 50%;
+  top: 6.12em;
 }
 .people-input {
   background-image: url('../images/icon-person.svg');
 }
 .calculator-result {
+  grid-area: results;
   border-radius: 1em;
   background-color: var(--very-dark-cyan);
   padding: 0.5em 1.5em 1.5em;
@@ -183,8 +197,25 @@ body {
   height: fit-content;
   font-size: 1em;
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
 }
 /*============== DESKTOP STYLES ==============*/
 @media screen and (min-width: 1024px) {
+  .calculator-layout {
+    grid-template-areas: 'inputs results';
+    gap: 3em;
+  }
+  .calculator-inputs {
+    width: 25em;
+  }
+  .calculator-result {
+    width: 18em;
+    padding-top: 1em;
+  }
+  .tip-amount-article {
+    margin-bottom: 1em;
+  }
+  .reset-button {
+    margin-top: 6em;
+  }
 }
