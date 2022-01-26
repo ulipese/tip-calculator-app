@@ -178,7 +178,13 @@ body {
 .tip-amount-article {
   margin-bottom: -0.5em;
 }
-
+.footer {
+  background-color: var(--light-grayish-cyan);
+  height: fit-content;
+  font-size: 1em;
+  text-align: center;
+  padding: 1em;
+}
 /*============== DESKTOP STYLES ==============*/
 @media screen and (min-width: 1024px) {
 }
