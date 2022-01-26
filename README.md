@@ -20,7 +20,9 @@
 ### Screenshot
 
 #### Mobile
-![](assets/design/my-result-mobile.png)
+![](assets/design/my-result-mobile1.png)
+
+![](assets/design/my-result-mobile2.png)
 
 #### Desktop
 ![](assets/design/my-result-desktop.png)
