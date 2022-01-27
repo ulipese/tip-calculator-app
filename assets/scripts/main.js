@@ -78,11 +78,16 @@ const clearAll = () => {
 }
 // Update the values ​​on the screen
 setInterval(() => {
-  if (validBill(bill) <= 0 || validBill(bill) == undefined || validBill(bill) > 0 && tip == 0 || validPeople(numberPeople) <= 0 || validPeople(numberPeople) == undefined) {
+  if (
+    validBill(bill) <= 0 ||
+    validBill(bill) == undefined ||
+    (validBill(bill) > 0 && tip == 0) ||
+    validPeople(numberPeople) <= 0 ||
+    validPeople(numberPeople) == undefined
+  ) {
     tipAmount.textContent = formatter.format(0)
     totalAmount.textContent = formatter.format(0)
-  } 
-  else {
+  } else {
     tipAmount.textContent = formatter.format(calculateTipAmount())
     totalAmount.textContent = formatter.format(calculateTotalAmount())
   }

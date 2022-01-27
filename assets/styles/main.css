@@ -149,6 +149,7 @@ body {
   width: 5em;
 }
 .calculator-layout {
+  width: 19.4em;
   height: fit-content;
   background-color: var(--white);
   border-radius: 16px;
