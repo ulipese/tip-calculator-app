@@ -136,20 +136,30 @@ body {
   padding: 0em;
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "banner"
+                                    "footer";
+  gap: 1.5em;
+  background-color: var(--light-grayish-cyan);
+}
 .banner {
+  grid-area: banner;
   width: 100%;
-  height: fit-content;
-  padding-top: 3em;
+  height: 100%;
+  padding-top: 1.6em;
   background-color: var(--light-grayish-cyan);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .logo-splitter {
   width: 5em;
 }
 .calculator-layout {
-  width: 19.4em;
+  width: fit-content;
   height: fit-content;
   background-color: var(--white);
   border-radius: 16px;
@@ -194,6 +204,7 @@ body {
   margin-bottom: -0.5em;
 }
 .footer {
+  grid-area: footer;
   background-color: var(--light-grayish-cyan);
   height: fit-content;
   font-size: 1em;
@@ -203,6 +214,7 @@ body {
 /*============== DESKTOP STYLES ==============*/
 @media screen and (min-width: 1024px) {
   .calculator-layout {
+    width: fit-content;
     grid-template-areas: 'inputs results';
     gap: 3em;
   }
