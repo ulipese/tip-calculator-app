@@ -50,6 +50,7 @@ I learned more about JS and the DOM.
 
 ## Author
 
-- Website - [Felipe Sousa](https://www.github.com/ulipese)
+- Linkedin - [Felipe Sousa](https://www.linkedin.com/in/felipe-sousa-0311491b3/)
+- Github - [Felipe Sousa](https://www.github.com/ulipese)
 - Frontend Mentor - [@ulipese](https://www.frontendmentor.io/profile/ulipese)
 - Twitter - [@ulipese](https://www.twitter.com/ulipese)
