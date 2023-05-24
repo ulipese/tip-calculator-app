@@ -53,4 +53,3 @@ I learned more about JS and the DOM.
 - Linkedin - [Felipe Sousa](https://www.linkedin.com/in/ulipese)
 - Github - [Felipe Sousa](https://www.github.com/ulipese)
 - Frontend Mentor - [@ulipese](https://www.frontendmentor.io/profile/ulipese)
-- Twitter - [@ulipese](https://www.twitter.com/ulipese)
